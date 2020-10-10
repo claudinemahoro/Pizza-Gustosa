@@ -54,16 +54,19 @@
         <option value="Large">Large</option>
       </select> <br> <br>
       <div id="getPrice">
-      <button type="submit" id="cost">Price per one</button>
-      <input type="text" placeholder="" id="seePrice">
-    </div> <br><br>
-      <label for="quantity">Choose the number of Pizza you want:</label> &nbsp;
+      <button type="submit" id="cost"><b>Check price</b></button>
+      <p id="seePrice"></p>
+    </div> <br>
+      <label for="quantity">How many Pizza do you want:</label> &nbsp;
       <input type="number" placeholder="e.g: 4" required> <br> <br>
       <label>Would you like us to deliver your order?</label> &nbsp; &nbsp;
       <label for="delivery">YES</label>
       <input type="radio" value="yes" name="delivery" required> &nbsp; &nbsp;
       <label for="delivery">NO</label>
       <input type="radio" value="no" name="delivery" required>
+      <div id="getTotal">
+        <button type="submit" id="totalCost"><b>Checkout</b></button>
+        <p id="seeTotal"></p>
     </form>
   </div>
 </body>
