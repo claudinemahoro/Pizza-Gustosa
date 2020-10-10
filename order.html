@@ -22,39 +22,43 @@
       <p> Choose the pizza of your choice in Pizza Gustosa, we make it for you right away and we serve it to you where you are. </p>
     </div>
     <form>
-      <label for="crust">Choose the crust of your Pizza:</label>
-      <select>
-        <option>Flat Bread</option>
-        <option>Cracker Crust</option>
-        <option>Greek (Pitta Crust)</option>
-        <option>Focaccia</option>
-        <option>Thin Crust</option>
-        <option>Neopolitan</option>
-        <option>Sour Dough</option>
-      </select> <br>
-      <label for="topping">Choose the topping of your Pizza:</label>
-      <select>
-        <option>Beef</option>
-        <option>Sausage</option>
-        <option>Ham</option>
-        <option>Chicken</option>
-        <option>Onions</option>
-        <option>Extra cheese</option>
-        <option>Peppers</option>
-      </select> <br>
-      <label for="size">Choose the size of your Pizza:</label>
-      <select>
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select> <br>
-      <label for="quantity">Choose the number of Pizza you want:</label>
-      <input type="number" placeholder="number of pizza"> <br>
-      <label>Would you like us to deliver your order?</label> &nbsp;
+      <label for="crust">Choose the crust of your Pizza:</label> &nbsp;
+      <select required>
+        <option value="" selected disabled hidden>Select crust</option>
+        <option value="Flat Bread">Flat Bread</option>
+        <option value="Cracker">Cracker Crust</option>
+        <option value="Greek">Greek (Pitta Crust)</option>
+        <option value="Focaccia">Focaccia</option>
+        <option value="Thin ">Thin Crust</option>
+        <option value="Neopolitan">Neopolitan</option>
+        <option value="Sour Dough">Sour Dough</option>
+      </select> <br> <br>
+      <label for="topping">Choose the topping of your Pizza:</label> &nbsp;
+      <select required>
+        <option value="" selected disabled hidden>Select topping</option>
+        <option value="Beef">Beef</option>
+        <option value="Sausage">Sausage</option>
+        <option value="Ham">Ham</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Onions">Onions</option>
+        <option value="Cheese">Extra cheese</option>
+        <option value="Peppers">Peppers</option>
+      </select> <br> <br>
+      <label for="size">Choose the size of your Pizza:</label> &nbsp;
+      <select required>
+        <option value="" selected disabled hidden>Select size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select> <br> <br>
+
+      <label for="quantity">Choose the number of Pizza you want:</label> &nbsp;
+      <input type="number" placeholder="e.g: 4" required> <br> <br>
+      <label>Would you like us to deliver your order?</label> &nbsp; &nbsp;
       <label for="delivery">YES</label>
-      <input type="radio" value="yes" name="delivery"> &nbsp;
+      <input type="radio" value="yes" name="delivery" required> &nbsp; &nbsp;
       <label for="delivery">NO</label>
-      <input type="radio" value="no" name="delivery">
+      <input type="radio" value="no" name="delivery" required>
     </form>
   </div>
 </body>
