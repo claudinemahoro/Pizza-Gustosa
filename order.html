@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  
   <title>Pizza Gustosa</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
     <div class="card">
       <p> Choose the pizza of your choice in Pizza Gustosa, we make it for you right away and we serve it to you where you are. </p>
     </div>
-    <form>
+    <form class="form-contol">
       <label for="crust">Choose the crust of your Pizza:</label> &nbsp;
       <select required>
         <option value="" selected disabled hidden>Select crust</option>
@@ -51,7 +52,10 @@
         <option value="Medium">Medium</option>
         <option value="Large">Large</option>
       </select> <br> <br>
-
+      <div id="getPrice">
+      <button type="submit" id="cost">Price per one</button>
+      <input type="text" placeholder="" id="seePrice">
+    </div> <br><br>
       <label for="quantity">Choose the number of Pizza you want:</label> &nbsp;
       <input type="number" placeholder="e.g: 4" required> <br> <br>
       <label>Would you like us to deliver your order?</label> &nbsp; &nbsp;
