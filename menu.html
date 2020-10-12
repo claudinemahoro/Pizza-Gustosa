@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/script.js"></script>
   <title>Gustosa</title>
 </head>
 <body id="order2">
@@ -20,14 +22,20 @@
     </div>
     <div class="row">
       <div class="col-md-6" id="images">
-        <img src="https://cdn.pixabay.com/photo/2017/04/13/11/50/beef-2227378_960_720.jpg">
-        <img src="https://cdn.pixabay.com/photo/2017/01/22/19/12/pizza-2000599__340.jpg">
-        <img src="https://cdn.pixabay.com/photo/2016/03/05/21/46/american-1239081__340.jpg">
+          <span>
+          <img src="https://cdn.pixabay.com/photo/2017/04/13/11/50/beef-2227378_960_720.jpg" id="img4">
+          <h6 id="porto4">Small pizza</h6>
+          </span>
+          <span>
+          <img src="https://cdn.pixabay.com/photo/2016/03/05/21/46/american-1239081__340.jpg" id="img5">
+          <h6 id="porto5">Medium pizza</h6>
+          </span>
+          <span>
+          <img src="https://cdn.pixabay.com/photo/2017/01/22/19/12/pizza-2000599__340.jpg" id="img6">
+          <h6 id="porto6">Large pizza</h6>
+          </span>
         <br> <br>
-        <div id="description">
-          <h2>Welcome to Pizza Gustosa menu.</h2>
-          <p>We have got pizza of different sizes,crusts,toppings; just for you.Share a pizza,share happiness!</p>
-        </div>
+        
       </div>
       <div class="col-md-6" id="liste">
         <ul>
@@ -47,10 +55,16 @@
           <li>Ham</li>
           <li>Chicken</li>
           <li>Onions</li>
+          <br>
+          <p>All available in small,medium and large sizes.</p>
         </ul>
       </div>
+      <div id="description">
+        <h2>Welcome to Pizza Gustosa menu.</h2>
+        <p>We have got pizza of different sizes,crusts,toppings; just for you.Share a pizza,share happiness!</p>
+      </div>
     </div>
-
+    
    <footer>
     <div id="copyright">
       <p>Copyright &#169; 2020 PizzaGustosa</p>
