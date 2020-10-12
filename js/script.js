@@ -2,6 +2,9 @@ $(document).ready(function(){
 
   //business logic
   $("#summary").hide();
+  $("#porto4").hide();
+  $("#porto5").hide();
+  $("#porto6").hide();
   function Pizza(crust,topping,size,cost){
     this.pizzaCrust=crust;
     this.pizzaTopping=topping;
@@ -100,4 +103,29 @@ $("#checkout").click(function(event){
   alert("Order received.")
   $("#summary").show();
 }); 
+
+$("#img4").hover(function(){
+  $(this).animate({opacity: .8}, 100);
+  $("#porto4").fadeIn();
+},
+function(){
+  $(this).stop().animate({opacity:1}, 400);
+  $("#porto4").fadeOut();
+});
+$("#img5").hover(function(){
+  $(this).animate({opacity: .8}, 100);
+  $("#porto5").fadeIn();
+},
+function(){
+  $(this).stop().animate({opacity:1}, 400);
+  $("#porto5").fadeOut();
+});
+$("#img6").hover(function(){
+  $(this).animate({opacity: .8}, 100);
+  $("#porto6").fadeIn();
+},
+function(){
+  $(this).stop().animate({opacity:1}, 400);
+  $("#porto6").fadeOut();
+});
 });
