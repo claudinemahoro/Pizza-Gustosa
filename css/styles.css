@@ -8,6 +8,8 @@
   font-size: 20px;
   padding-left: 30px;
   padding-right: 30px;
+  color: black;
+  /* font-weight: bold; */
 }
 .jumbotron{
   background-image:url("https://static.toiimg.com/thumb/51892394/10-best-mid-range-Italian-Pizzeria-in-Gurgaon.jpg?width=1200&height=900");
@@ -48,17 +50,21 @@
 #copyright{
   background-color:#F1B620 ;
   height: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 #copyright p{
   text-align: center;
   padding: 15px;
   font-size: 20px;
+  color: white;
 }
 .about{
   background-color: transparent;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 #getPrice,#getTotal{
   width: 400px;
@@ -66,11 +72,73 @@
   flex-direction: row;
   justify-content: space-around;
 }
-#seePrice,#seeTotal{
-  border: 1px solid black;
-  height: 50px;
-  width: 150px;
+#card{
+  text-align: center;
+  padding:10px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
 }
-#cost,#totalCost{
-  height: 50px;
+#spa{
+  display: flex;
+  flex-direction:row ;
+
+}
+.form-control{
+  color: black;
+}
+.form-control h2,h1{
+  text-align: center;
+  border:0;
+}
+#texte{
+  text-align: center;
+  font-weight: bold;
+}
+#del{
+  display: flex;
+  justify-content: space-around;
+}
+#order{
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_960_720.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-color: transparent;
+}
+#order1{
+  background-image: url("https://cdn.pixabay.com/photo/2017/07/25/09/08/pizza-oven-2537308__340.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+#order2{
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/07/18/42/menu-3206749_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: white;
+}
+/* .container-fluid{
+  padding: 0;
+} */
+#result{
+color: white;
+}
+#images img{
+width: 200px;
+height: 200px;
+}
+#images{
+  margin-top: 60px;
+}
+#description{
+  text-align: justify;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  float: right;
+}
+#liste{
+  margin-top: 80px;
+  padding: 30px;
 }
