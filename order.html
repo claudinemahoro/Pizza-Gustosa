@@ -9,8 +9,8 @@
   <script src="js/script.js"></script>
   <title>Pizza Gustosa</title>
 </head>
-<body>
-  <div class="container">
+<body id="order">
+  <div class="container-fluid" >
     <div class="navbar">
       <nav class="navbar">
         <ul class="nav">
@@ -20,53 +20,72 @@
         </ul>
       </nav>
     </div>
-    <div class="card">
-      <p> Choose the pizza of your choice in Pizza Gustosa, we make it for you right away and we serve it to you where you are. </p>
+    <div id="card">
+      <br><p> Choose the pizza of your choice, we make it for you and we serve it to you where you are.<br>Share a pizza, share happiness! </p>
+      <br><h2>Order Form</h2><br>
     </div>
-    <form class="form-contol">
+    <form class="form-control">
+      <div id="texte">Fill in your order here</div><br><br>
+      <div class="row">
+        <div class="col-md-6">
       <label for="crust">Choose the crust of your Pizza:</label> &nbsp;
-      <select required>
+      <select id="crust" name="crust" required class="form-control">
         <option value="" selected disabled hidden>Select crust</option>
-        <option value="Flat Bread">Flat Bread</option>
-        <option value="Cracker">Cracker Crust</option>
-        <option value="Greek">Greek (Pitta Crust)</option>
-        <option value="Focaccia">Focaccia</option>
-        <option value="Thin ">Thin Crust</option>
-        <option value="Neopolitan">Neopolitan</option>
-        <option value="Sour Dough">Sour Dough</option>
-      </select> <br> <br>
-      <label for="topping">Choose the topping of your Pizza:</label> &nbsp;
-      <select required>
-        <option value="" selected disabled hidden>Select topping</option>
-        <option value="Beef">Beef</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Ham">Ham</option>
-        <option value="Chicken">Chicken</option>
-        <option value="Onions">Onions</option>
-        <option value="Cheese">Extra cheese</option>
-        <option value="Peppers">Peppers</option>
-      </select> <br> <br>
+        <option>Flat Bread</option>
+        <option>Cracker</option>
+        <option>Greek</option>
+        <option>Focaccia</option>
+        <option>Thin </option>
+      </select> <br>
       <label for="size">Choose the size of your Pizza:</label> &nbsp;
-      <select required>
+      <select id="size" name="size" required class="form-control">
         <option value="" selected disabled hidden>Select size</option>
-        <option value="Small">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-      </select> <br> <br>
-      <div id="getPrice">
-      <button type="submit" id="cost"><b>Check price</b></button>
-      <p id="seePrice"></p>
-    </div> <br>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select> <br>
+      <label for="topping">Choose the topping of your Pizza:</label> &nbsp;
+      <select id="topping" name="topping" required class="form-control">
+        <option value="" selected disabled hidden>Select topping</option>
+        <option>Beef</option>
+        <option>Sausage</option>
+        <option>Ham</option>
+        <option>Chicken</option>
+        <option>Onions</option>
+      </select> <br> 
       <label for="quantity">How many Pizza do you want:</label> &nbsp;
-      <input type="number" placeholder="e.g: 4" required> <br> <br>
-      <label>Would you like us to deliver your order?</label> &nbsp; &nbsp;
-      <label for="delivery">YES</label>
-      <input type="radio" value="yes" name="delivery" required> &nbsp; &nbsp;
-      <label for="delivery">NO</label>
-      <input type="radio" value="no" name="delivery" required>
-      <div id="getTotal">
-        <button type="submit" id="totalCost"><b>Checkout</b></button>
-        <p id="seeTotal"></p>
+      <input type="number" id="quantity" placeholder="e.g: 4" required class="form-control"> <br>
+      <span class="form-control" id="spa"><p>Cost per one pizza:</p> &nbsp;<p id="priceOne"> </p></span><br>
+      <span class="form-control" id="spa"><p >Total cost of your order:</p> &nbsp;<p id="seePrice"> </p></span> <br>
+      <div id="getPrice">
+      <button type="submit" id="cost" class="btn-secondary"><b>check cost</b></button>
+      <button type="submit" id="checkout" class="btn-secondary"><b>Checkout</b></button>
+      </div> <br>
+    </div>
+    <div class="col-md-6" id="result">
+      <h2>Order summary</h2>
+       <br><br>
+      <div id="summary">
+        
+        <p>Here is the order you placed:</p>
+        <span id="spa"><label>Pizza crust:</label> <p id="cru"></p></span>
+        <span id="spa"><label>Pizza size:</label> <p id="si"></p></span>
+        <span id="spa"><label>Pizza topping:</label> <p id="top"></p></span>
+        <span id="spa"><label>Number of pizza:</label> <p id="nbr"></p></span>
+        <span id="spa"><label>Total cost:</label> <p id="cos"></p></span>
+        <br><br>
+        <h3>Thank you for choosing Pizza Gustosa</h3>
+      </div> <br><br>
+      <div id="del">
+        <button type="submit" id="deliver" class="btn-secondary"><b>Deliver my order</b></button>
+        <button type="submit" id="dontDeliver" class="btn-secondary"><b>I'll pick my order</b></button>
+      </div><br><br>
+    </div>
+    </div>
+    <hr color="white">
+    <div id="copyright">
+      <p>Copyright &#169; 2020 PizzaGustosa</p>
+    </div>
     </form>
   </div>
 </body>
