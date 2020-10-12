@@ -129,16 +129,22 @@ width: 200px;
 height: 200px;
 }
 #images{
-  margin-top: 60px;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #description{
   text-align: justify;
   font-size: 22px;
   font-weight: bold;
   background-color: transparent;
-  float: right;
+  float: bottom;
 }
 #liste{
   margin-top: 80px;
   padding: 30px;
+}
+#porto4,#porto5,#porto6{
+  text-transform: uppercase;
 }
